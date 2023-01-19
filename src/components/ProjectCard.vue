@@ -16,7 +16,7 @@ export default {
 
 <template>
     <div class="col-4">
-        <div class="card p-3 m-3">
+        <div class="card h-100">
             <h3>
                 {{ project.title }}
             </h3>
@@ -25,7 +25,7 @@ export default {
                 {{ project.description }}
             </div>
             <div class="p-2" v-if="project.technologies">
-                <h5 v-if="project.technologies">Technologies:</h5>
+                <h5>Technologies:</h5>
                 <span v-for="tech in project.technologies">
                     #{{ tech.name }}
                 </span>

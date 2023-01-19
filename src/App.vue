@@ -29,7 +29,7 @@ export default {
     <main class="my_main">
         <div class="container p-5">
             <section v-if="store.projects">
-                <div class="row">
+                <div class="row g-4">
                     <ProjectCard v-for="project in store.projects.data" :project="project" />
                 </div>
                 <nav aria-label="Page navigation" class="d-flex justify-content-center pt-5">
