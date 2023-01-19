@@ -1,60 +1,70 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { store } from './store.js'
+import ProjectCard from './components/ProjectCard.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
     components: {
-        HelloWorld,
+        ProjectCard,
+        AppHeader,
+        AppFooter,
+    },
+    data() {
+        return {
+            store,
+        }
+    },
+    mounted() {
+        store.callAxios(store.url);
     }
 }
 </script>
 
 <template>
-    <section class="vue-home">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex flex-column justify-content-center align-items-center vh-100">
-                    <div class="logos">
-                        <a href="https://vitejs.dev" target="_blank">
-                            <img src="/vite.svg" class="logo" alt="Vite logo" />
-                        </a>
-                        <a href="https://vuejs.org/" target="_blank">
-                            <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-                        </a>
-                    </div>
-                    <HelloWorld />
+    <header>
+        <AppHeader></AppHeader>
+    </header>
+    <main>
+        <div class="container p-5">
+            <section v-if="store.projects">
+                <div class="row">
+                    <ProjectCard v-for="project in store.projects.data" :project="project" />
                 </div>
-            </div>
+                <nav aria-label="Page navigation" class="d-flex justify-content-center pt-5">
+                    <ul class="pagination    ">
+                        <li class="page-item" v-if="store.projects.prev_page_url"
+                            @click="store.prevPage(store.projects.prev_page_url)">
+                            <a class="page-link" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item active" aria-current="page"><a class="page-link" href="#">{{
+                            store.projects.current_page
+                        }}</a></li>
+
+                        <li class="page-item" v-if="store.projects.next_page_url"
+                            @click="store.nextPage(store.projects.next_page_url)">
+                            <a class="page-link" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section v-else>
+                <div class="no_records">
+                    <h4>Sorry no records inside the database.</h4>
+                </div>
+            </section>
         </div>
-    </section>
+    </main>
+    <footer>
+        <AppFooter></AppFooter>
+    </footer>
 </template>
+
 
 <style lang="scss">
 @use './styles/general.scss';
-
-.vue-home {
-    color: #2c3e50;
-    background: #181818;
-    transition: color 0.5s, background-color 0.5s;
-    line-height: 1.6;
-    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-        Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-}
-
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-    filter: drop-shadow(0 0 2em #42b883aa);
-}
 </style>
