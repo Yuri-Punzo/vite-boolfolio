@@ -17,15 +17,17 @@ export default {
 <template>
     <div class="col-4">
         <div class="card h-100">
-            <h3>
+            <h3 class="p-2">
                 {{ project.title }}
             </h3>
             <!-- <img width="200" :src="store.getImagePath(project.image)" alt=""> -->
             <div class="p-2">
                 {{ project.description }}
             </div>
-            <div class="p-2" v-if="project.technologies">
+            <div class="p-2" v-if="project.technologies.length > 0">
                 <h5>Technologies:</h5>
+            </div>
+            <div class="ps-2">
                 <span v-for="tech in project.technologies">
                     #{{ tech.name }}
                 </span>
