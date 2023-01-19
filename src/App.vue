@@ -25,6 +25,7 @@ export default {
     <header>
         <AppHeader></AppHeader>
     </header>
+    <!-- /header -->
     <main>
         <div class="container p-5">
             <section v-if="store.projects">
@@ -59,9 +60,11 @@ export default {
             </section>
         </div>
     </main>
+    <!-- /main -->
     <footer>
         <AppFooter></AppFooter>
     </footer>
+    <!-- /footer -->
 </template>
 
 

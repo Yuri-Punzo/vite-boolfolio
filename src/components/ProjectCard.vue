@@ -25,7 +25,7 @@ export default {
                 {{ project.description }}
             </div>
             <div class="p-2" v-if="project.technologies">
-                <h5>Technologies:</h5>
+                <h5 v-if="project.technologies">Technologies:</h5>
                 <span v-for="tech in project.technologies">
                     #{{ tech.name }}
                 </span>

@@ -3,6 +3,7 @@ export default {
     name: 'AppHeader',
 }
 </script>
+
 <template>
     <div>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -25,6 +26,7 @@ export default {
 
     </div>
 </template>
+
 <style lang="scss" scoped>
 
 </style>
