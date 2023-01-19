@@ -6,7 +6,7 @@ export default {
 
 <template>
     <div>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark my_navbar">
             <div class="container">
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -28,5 +28,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+.my_navbar {
+    height: 8vh;
+}
 </style>

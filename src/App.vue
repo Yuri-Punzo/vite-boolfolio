@@ -26,7 +26,7 @@ export default {
         <AppHeader></AppHeader>
     </header>
     <!-- /header -->
-    <main>
+    <main class="my_main">
         <div class="container p-5">
             <section v-if="store.projects">
                 <div class="row">
@@ -70,4 +70,8 @@ export default {
 
 <style lang="scss">
 @use './styles/general.scss';
+
+.my_main {
+    height: 80vh;
+}
 </style>
