@@ -6,13 +6,15 @@ export default {
     name: 'SingleProjectView',
     data() {
         return {
-            store
+            store,
+            project: null,
+            loading: true,
         }
     },
     mounted() {
         //console.log(this.$route.params.slug);
-        const url = this.api_base_url + '/api/projects/' + this.$route.params.slug
-        console.log(url);
+        const url = this.store.base_api_url + '/api/projects/' + this.$route.params.slug
+        //console.log(url);
         axios.get(url)
             .then(response => {
                 if (response.data.success) {
@@ -24,9 +26,11 @@ export default {
                     */
                     // https://router.vuejs.org/guide/essentials/navigation.html#navigate-to-a-different-location
                 }
-                console.log(response);
+                //console.log(response);
             }).catch(error => {
-                console.log(error)
+                console.error(error)
+                this.error = error.message
+                this.loading = false
             })
 
     }
@@ -38,13 +42,12 @@ export default {
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100" v-if="!loading">
                     <h3 class="p-2">
                         {{ project.title }}
-                        <!-- {{ $route.params.slug }} -->
                     </h3>
                     <!-- <img width="200" :src="store.getImagePath(project.image)" alt=""> -->
-                    <!-- <div class="p-2">
+                    <div class="p-2">
                         {{ project.description }}
                     </div>
                     <div class="p-2" v-if="project.technologies.length > 0">
@@ -58,7 +61,10 @@ export default {
                     <div class="p-2" v-if="project.type">
                         <h5>Type:</h5>
                         {{ project.type.name }}
-                    </div> -->
+                    </div>
+                </div>
+                <div class="text-center pt-5" v-else>
+                    <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt="">
                 </div>
             </div>
         </div>

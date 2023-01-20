@@ -5,7 +5,10 @@ export default {
 </script>
 
 <template>
-    <h1>ERROR 404</h1>
+    <div class="container text-center">
+        <img src="https://img.freepik.com/premium-vector/404-page-found-error-drawing-icon-internet-connection-page-template-doodle-vector-illustration_613530-18.jpg"
+            alt="">
+    </div>
 </template>
 
 <style lang="scss">
