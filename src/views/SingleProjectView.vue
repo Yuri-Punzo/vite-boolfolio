@@ -21,10 +21,7 @@ export default {
                     this.project = response.data.results
                     this.loading = false
                 } else {
-                    /* TODO: handle the not found post  
-                    404 
-                    */
-                    // https://router.vuejs.org/guide/essentials/navigation.html#navigate-to-a-different-location
+                    //check if it is the right way to do this redirect
                     this.$router.replace({ name: 'not-found' })
                 }
                 //console.log(response);
