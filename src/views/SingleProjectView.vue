@@ -25,6 +25,7 @@ export default {
                     404 
                     */
                     // https://router.vuejs.org/guide/essentials/navigation.html#navigate-to-a-different-location
+                    this.$router.replace({ name: 'not-found' })
                 }
                 //console.log(response);
             }).catch(error => {
