@@ -16,7 +16,16 @@ export default {
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">Home</a>
+                            <router-link class="nav-link" :to="{ name: 'home' }" aria-current="page">Home</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" :to="{ name: 'portfolio' }">Portfolio</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" :to="{ name: 'about' }">About</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" :to="{ name: 'contacts' }">Contacts</router-link>
                         </li>
                     </ul>
                 </div>

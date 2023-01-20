@@ -36,6 +36,9 @@ export default {
                 <h5>Type:</h5>
                 {{ project.type.name }}
             </div>
+            <div class="p-2">
+                <router-link :to="{ name: 'single-project', params: { slug: project.slug } }">Show</router-link>
+            </div>
         </div>
     </div>
 
