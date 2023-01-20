@@ -1,14 +1,37 @@
 <script>
 import { store } from "../store.js";
+import axios from 'axios';
 
 export default {
     name: 'SingleProjectView',
     data() {
         return {
-            store,
+            store
         }
+    },
+    mounted() {
+        //console.log(this.$route.params.slug);
+        const url = this.api_base_url + '/api/projects/' + this.$route.params.slug
+        console.log(url);
+        axios.get(url)
+            .then(response => {
+                if (response.data.success) {
+                    this.project = response.data.results
+                    this.loading = false
+                } else {
+                    /* TODO: handle the not found post  
+                    404 
+                    */
+                    // https://router.vuejs.org/guide/essentials/navigation.html#navigate-to-a-different-location
+                }
+                console.log(response);
+            }).catch(error => {
+                console.log(error)
+            })
+
     }
 }
+
 </script>
 
 <template>
@@ -17,8 +40,8 @@ export default {
             <div class="col">
                 <div class="card h-100">
                     <h3 class="p-2">
-                        <!-- {{ project.title }} -->
-                        {{ $route.params.slug }}
+                        {{ project.title }}
+                        <!-- {{ $route.params.slug }} -->
                     </h3>
                     <!-- <img width="200" :src="store.getImagePath(project.image)" alt=""> -->
                     <!-- <div class="p-2">
