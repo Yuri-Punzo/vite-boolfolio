@@ -32,7 +32,7 @@ const router = createRouter({
             component: ContactsView
         },
         {
-            path: '/blog/:slug',
+            path: '/portfolio/:slug',
             name: 'single-project',
             component: SingleProjectView
         },

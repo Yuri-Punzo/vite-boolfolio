@@ -3,9 +3,6 @@ import { store } from "../store.js";
 
 export default {
     name: 'SingleProjectView',
-    props: {
-        project: Object,
-    },
     data() {
         return {
             store,
@@ -20,10 +17,11 @@ export default {
             <div class="col">
                 <div class="card h-100">
                     <h3 class="p-2">
-                        {{ project.title }}
+                        <!-- {{ project.title }} -->
+                        {{ $route.params.slug }}
                     </h3>
                     <!-- <img width="200" :src="store.getImagePath(project.image)" alt=""> -->
-                    <div class="p-2">
+                    <!-- <div class="p-2">
                         {{ project.description }}
                     </div>
                     <div class="p-2" v-if="project.technologies.length > 0">
@@ -37,7 +35,7 @@ export default {
                     <div class="p-2" v-if="project.type">
                         <h5>Type:</h5>
                         {{ project.type.name }}
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

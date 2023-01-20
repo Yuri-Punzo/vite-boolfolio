@@ -16,7 +16,7 @@ export default {
     </header>
     <!-- /header -->
     <main class="my_main">
-        <router-view :project="project"></router-view>
+        <router-view></router-view>
     </main>
     <!-- /main -->
     <footer>
