@@ -30,6 +30,7 @@ export default {
 @use './styles/general.scss';
 
 .my_main {
-    height: 80vh;
+    height: 82vh;
+    overflow-y: auto;
 }
 </style>

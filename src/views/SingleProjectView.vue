@@ -44,7 +44,7 @@ export default {
                     <h3 class="p-2">
                         {{ project.title }}
                     </h3>
-                    <!-- <img width="200" :src="store.getImagePath(project.image)" alt=""> -->
+                    <img width="200" :src="store.getImagePath(project.cover_image)" alt="">
                     <div class="p-2">
                         {{ project.description }}
                     </div>

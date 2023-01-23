@@ -44,7 +44,5 @@ export default {
 
 
 <style lang="scss">
-.my_main {
-    height: 80vh;
-}
+
 </style>

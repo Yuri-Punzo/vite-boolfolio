@@ -19,13 +19,13 @@ export const store = reactive({
                 this.loading = false
             })
     },
-    /* getImagePath(path) {
+    getImagePath(path) {
 
         if (path) {
             return this.base_api_url + '/storage/' + path
         }
         return '/img/placeholder.png'
-    }, */
+    },
     prevPage(url) {
 
         store.callAxios(url)

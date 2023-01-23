@@ -7,8 +7,8 @@ export default {
 <template>
 
     <div class="bg-dark text-light my_footer">
-        <div class="container">
-            <p class="pt-5 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet soluta magnam vel?</p>
+        <div class="container h-100 d-flex align-items-center">
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet soluta magnam vel?</p>
         </div>
     </div>
 
@@ -16,6 +16,6 @@ export default {
 
 <style lang="scss" scoped>
 .my_footer {
-    height: 12vh;
+    height: 10vh;
 }
 </style>
