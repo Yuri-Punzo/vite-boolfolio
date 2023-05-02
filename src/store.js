@@ -27,11 +27,15 @@ export const store = reactive({
         return '/img/placeholder.png'
     },
     prevPage(url) {
-
         store.callAxios(url)
     },
     nextPage(url) {
-
+        store.callAxios(url)
+    },
+    lastPage(url) {
+        store.callAxios(url)
+    },
+    firstPage(url) {
         store.callAxios(url)
     }
 
