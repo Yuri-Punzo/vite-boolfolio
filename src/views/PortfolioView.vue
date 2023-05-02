@@ -19,7 +19,6 @@ export default {
 </script>
 
 <template>
-
     <div class="container p-5">
         <section v-if="store.projects">
             <div class="row g-4">
@@ -27,7 +26,7 @@ export default {
             </div>
             <!-- /ProjectCard -->
             <nav aria-label="Page navigation" class="d-flex justify-content-center pt-5">
-                <ul class="pagination    ">
+                <ul class="pagination">
                     <li class="page-item" v-if="store.projects.prev_page_url"
                         @click="store.prevPage(store.projects.prev_page_url)">
                         <a class="page-link" aria-label="Previous">
@@ -35,10 +34,12 @@ export default {
                         </a>
                     </li>
                     <!-- /prevPage -->
-                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">{{
-                        store.projects.current_page
-                    }}</a></li>
-                    <!-- currentPage -->
+                    <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">
+                            {{ store.projects.current_page }}
+                        </a>
+                    </li>
+                    <!-- /currentPage -->
                     <li class="page-item" v-if="store.projects.next_page_url"
                         @click="store.nextPage(store.projects.next_page_url)">
                         <a class="page-link" aria-label="Next">
@@ -55,10 +56,7 @@ export default {
             </div>
         </section>
     </div>
-
 </template>
 
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

@@ -5,13 +5,11 @@ export default {
 </script>
 
 <template>
-
     <div class="bg-dark text-light my_footer">
         <div class="container h-100 d-flex align-items-center">
-            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet soluta magnam vel?</p>
+            <p class="mb-0"><i class="fa-regular fa-copyright"></i> Copyrights 2023 Yuri Punzo - All Rights Reserved</p>
         </div>
     </div>
-
 </template>
 
 <style lang="scss" scoped>
