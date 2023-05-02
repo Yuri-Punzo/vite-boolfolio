@@ -14,6 +14,6 @@ export default {
 
 <style lang="scss" scoped>
 .my_footer {
-    height: 10vh;
+    height: 8vh;
 }
 </style>
