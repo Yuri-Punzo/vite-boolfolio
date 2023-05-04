@@ -26,7 +26,7 @@ export default {
                     <li class="page-item" @click="store.firstPage(store.projects.first_page_url)"
                         v-if="store.projects.prev_page_url">
                         <a class="page-link my_link" aria-label="First">
-                            <span aria-hidden="true">&laquo;&laquo; First</span>
+                            <span aria-hidden="true">&laquo;&laquo;</span>
                         </a>
                     </li>
                     <!-- /firstPage -->
@@ -53,7 +53,7 @@ export default {
                     <li class="page-item" @click="store.lastPage(store.projects.last_page_url)"
                         v-if="store.projects.next_page_url">
                         <a class="page-link my_link" aria-label="Last">
-                            <span aria-hidden="true">Last &raquo;&raquo;</span>
+                            <span aria-hidden="true">&raquo;&raquo;</span>
                         </a>
                     </li>
                     <!-- /lastPage -->
