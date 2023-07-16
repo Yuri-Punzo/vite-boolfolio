@@ -16,7 +16,7 @@ export default {
 
 <template>
     <div class="container">
-        <h1 class="pt-5">Yuri Punzo - Junior Full Stack Developer</h1>
+        <h1 class="pt-5">Yuri Punzo - Junior Full Stack Web Developer</h1>
         <div>
             <p>CONTENUTO DI PRESENTAZIONE</p>
         </div>
