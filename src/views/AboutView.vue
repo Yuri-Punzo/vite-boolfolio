@@ -19,7 +19,7 @@ export default {
 
         <h1 class="pt-5">About</h1>
         <div>
-            <p>RACCONTARE LA MIA STORIA, ANCHE AL DI LA DELLA PROGRAMMAZIONE ?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, aliquid enim! Accusantium?</p>
         </div>
     </div>
 </template>
