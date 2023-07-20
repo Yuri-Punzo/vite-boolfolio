@@ -19,7 +19,8 @@ export default {
 
         <h1 class="pt-5">About</h1>
         <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, aliquid enim! Accusantium?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque autem, officiis id expedita non architecto.
+                Mollitia repellat sit eaque voluptates assumenda.</p>
         </div>
     </div>
 </template>
