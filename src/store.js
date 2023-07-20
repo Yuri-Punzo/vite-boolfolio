@@ -4,8 +4,8 @@ export const store = reactive({
 
     projects: '',
     loading: true,
-    base_api_url: 'http://15.160.217.221',
-    url: 'http://15.160.217.221/api/projects',
+    base_api_url: 'https://15.160.217.221',
+    url: 'https://15.160.217.221/api/projects',
 
     callAxios(call) {
         axios.get(call)
