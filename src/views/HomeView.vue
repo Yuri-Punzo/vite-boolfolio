@@ -31,10 +31,6 @@ export default {
     background-color: #212529;
 }
 
-h1 {
-    font-size: 50px;
-}
-
 span {
     font-size: 240px;
 }
