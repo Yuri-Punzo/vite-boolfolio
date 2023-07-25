@@ -35,10 +35,13 @@ export default {
                 </p>
             </div>
         </div>
-</div></template>
+    </div>
+</template>
 
 
-<style lang="scss" scoped>.background {
+<style lang="scss" scoped>
+.background {
     height: 100%;
     background-color: #212529;
-}</style>
+}
+</style>
