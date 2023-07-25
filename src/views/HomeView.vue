@@ -28,6 +28,7 @@ export default {
 
 <style lang="scss">
 .background {
+    height: 100%;
     background-color: #212529;
 }
 </style>
