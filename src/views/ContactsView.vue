@@ -16,7 +16,7 @@ export default {
 
 <template>
     <div class="background">
-        <div class="container">
+        <div class="container text-light">
             <h1 class="pt-5">Contacts</h1>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolore repellat ipsum perferendis
