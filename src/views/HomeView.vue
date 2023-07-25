@@ -19,7 +19,7 @@ export default {
         <div class="container text-light">
             <h1 class="pt-5">Ciao !</h1>
             <span>Sono</span><span>Yuri</span>
-            <h1>Full Stack Developer</h1>
+            <h1>Full Stack Web Developer</h1>
         </div>
     </div>
 </template>
@@ -29,5 +29,9 @@ export default {
 .background {
     height: 100%;
     background-color: #212529;
+}
+
+#h1 {
+    height: 180px;
 }
 </style>
