@@ -15,13 +15,19 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <h1 class="pt-5">Yuri Punzo - Junior Full Stack Web Developer</h1>
-        <div>
-            <img style="height: 250px;" src="../assets/love_baffuto.png" alt="">
+    <div class="background">
+        <div class="container text-light">
+            <h1 class="pt-5">Yuri Punzo - Junior Full Stack Web Developer</h1>
+            <div>
+                <img style="height: 250px;" src="../assets/love_baffuto.png" alt="">
+            </div>
         </div>
     </div>
 </template>
 
 
-<style lang="scss"></style>
+<style lang="scss">
+.background {
+    background-color: #212529;
+}
+</style>
