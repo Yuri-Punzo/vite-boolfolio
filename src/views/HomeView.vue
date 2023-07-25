@@ -17,8 +17,9 @@ export default {
 <template>
     <div class="background text-center">
         <div class="container text-light">
-            <h1 class="pt-5">Hello !</h1>
-            <h1>I Am Yuri</h1>
+            <h1 class="pt-5">Ciao !</h1>
+            <span>Sono</span><span>Yuri</span>
+            <h1>Full Stack Developer</h1>
         </div>
     </div>
 </template>
