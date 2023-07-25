@@ -32,6 +32,10 @@ export default {
 }
 
 h1 {
-    height: 180px;
+    font-size: 180px;
+}
+
+span {
+    font-size: 420px;
 }
 </style>
