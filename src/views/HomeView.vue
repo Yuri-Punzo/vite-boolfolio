@@ -44,10 +44,8 @@ export default {
 }
 
 @keyframes pop_out {
-    0% {
-        color: #212529;
-    }
 
+    0%,
     25% {
         color: #212529;
     }
