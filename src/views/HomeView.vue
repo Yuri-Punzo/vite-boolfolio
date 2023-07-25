@@ -18,7 +18,7 @@ export default {
     <div class="background text-center">
         <div class="container text-light">
             <h1 class="pt-5">Ciao !</h1>
-            <span>Sono </span><span class="name">Yuri</span>
+            <span>Sono</span><span class="name">Yuri</span>
             <h1>Full Stack Web Developer</h1>
         </div>
     </div>
