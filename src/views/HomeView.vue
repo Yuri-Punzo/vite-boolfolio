@@ -32,12 +32,11 @@ export default {
 }
 
 span {
+    font-family: 'Fira Sans', sans-serif;
     font-size: 240px;
 }
 
 .name {
     color: #9147ff;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
 </style>
