@@ -32,7 +32,7 @@ export default {
 }
 
 span {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Courier Prime', monospace;
     font-size: 240px;
 }
 
