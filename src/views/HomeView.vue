@@ -31,7 +31,7 @@ export default {
     background-color: #212529;
 }
 
-#h1 {
+h1 {
     height: 180px;
 }
 </style>
