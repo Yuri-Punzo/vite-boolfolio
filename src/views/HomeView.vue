@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<template class="background">
+<template>
     <div class="container">
         <h1 class="pt-5">Yuri Punzo - Junior Full Stack Web Developer</h1>
         <div>
@@ -24,8 +24,4 @@ export default {
 </template>
 
 
-<style lang="scss">
-.background {
-    background-color: #212529;
-}
-</style>
+<style lang="scss"></style>

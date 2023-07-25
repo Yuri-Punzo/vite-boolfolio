@@ -6,7 +6,7 @@ export default {
 
 <template>
     <!-- DA RISOLVERE: MenuItems che non compaiono nella responsive NavBar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark my_navbar">
+    <nav class="navbar navbar-expand-sm navbar-dark my_navbar">
         <div class="container d-none d-sm-block">
             <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -56,6 +56,7 @@ export default {
 <style lang="scss" scoped>
 .my_navbar {
     height: 8vh;
+    background-color: black;
 }
 
 .dropdown {
