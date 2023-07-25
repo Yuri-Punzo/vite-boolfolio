@@ -27,13 +27,13 @@ export default {
 .background {
     height: 100%;
     background-color: #212529;
-}
 
-span {
-    font-size: 240px;
-}
+    span {
+        font-size: 240px;
+    }
 
-.name {
-    color: #9147ff;
+    .name {
+        color: #9147ff;
+    }
 }
 </style>
