@@ -74,7 +74,7 @@ export default {
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 .my_link:hover {
     cursor: pointer;
 }
