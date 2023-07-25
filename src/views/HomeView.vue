@@ -24,4 +24,8 @@ export default {
 </template>
 
 
-<style lang="scss"></style>
+<style lang="scss">
+.container {
+    background-color: #212529;
+}
+</style>
