@@ -15,12 +15,10 @@ export default {
 </script>
 
 <template>
-    <div class="background">
+    <div class="background text-center">
         <div class="container text-light">
-            <h1 class="pt-5">Yuri Punzo - Junior Full Stack Web Developer</h1>
-            <div>
-                <img style="height: 250px;" src="../assets/love_baffuto.png" alt="">
-            </div>
+            <h1 class="pt-5">Hello !</h1>
+            <h1>I Am Yuri</h1>
         </div>
     </div>
 </template>
