@@ -5,7 +5,6 @@ export default {
 </script>
 
 <template>
-    <!-- DA RISOLVERE: MenuItems che non compaiono nella responsive NavBar -->
     <nav class="navbar navbar-expand-sm navbar-dark my_navbar">
         <div class="container d-none d-sm-block">
             <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse"

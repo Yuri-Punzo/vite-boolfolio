@@ -32,5 +32,6 @@ export default {
 .my_main {
     height: 84vh;
     overflow-y: auto;
+    font-family: 'Courier Prime', monospace;
 }
 </style>

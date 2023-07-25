@@ -15,12 +15,10 @@ export default {
 </script>
 
 <template>
-    <div class="background text-center">
-        <div class="container text-light">
-            <h1 class="pt-5">Ciao !</h1>
-            <span>Sono </span><span class="name">Yuri</span>
-            <h1>Full Stack Web Developer</h1>
-        </div>
+    <div class="background text-center text-light">
+        <h1 class="pt-5">Ciao !</h1>
+        <span>Sono </span><span class="name">Yuri</span>
+        <h1>Full Stack Web Developer</h1>
     </div>
 </template>
 
@@ -32,7 +30,6 @@ export default {
 }
 
 span {
-    font-family: 'Courier Prime', monospace;
     font-size: 240px;
 }
 
