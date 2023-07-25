@@ -16,7 +16,7 @@ export default {
 
 <template>
     <div class="background text-center text-light">
-        <h1 class="pt-5">Ciao!</h1>
+        <h1 class="pt-5 pop_out">Ciao!</h1>
         <span>Sono </span><span class="name">Yuri</span>
         <h1>Full Stack Web Developer</h1>
     </div>
@@ -34,6 +34,26 @@ export default {
 
     .name {
         color: #9147ff;
+    }
+}
+
+.pop_out {
+    animation-name: pop_out;
+    animation-duration: 3s;
+
+}
+
+@keyframes pop_out {
+    0% {
+        color: #212529;
+    }
+
+    25% {
+        color: #212529;
+    }
+
+    100% {
+        color: white;
     }
 }
 </style>
