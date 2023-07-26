@@ -24,37 +24,32 @@ export default {
 
 
 <style lang="scss" scoped>
-.background {
-    height: 100%;
-    background-color: #212529;
+span {
+    font-size: 240px;
+}
 
+.name {
+    color: #9147ff;
+}
+
+@media screen and (max-width: 1200px) {
     span {
-        font-size: 240px;
+        font-size: 200px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    span {
+        font-size: 180px;
     }
 
-    .name {
-        color: #9147ff;
+}
+
+@media screen and (max-width: 480px) {
+    span {
+        font-size: 120px;
     }
 
-    @media screen and (max-width: 1200px) {
-        span {
-            font-size: 200px;
-        }
-    }
-
-    @media screen and (max-width: 780px) {
-        span {
-            font-size: 180px;
-        }
-
-    }
-
-    @media screen and (max-width: 480px) {
-        span {
-            font-size: 120px;
-        }
-
-    }
 }
 
 .pop_out {

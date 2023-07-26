@@ -29,9 +29,4 @@ export default {
 </template>
 
 
-<style lang="scss" scoped>
-.background {
-    height: 100%;
-    background-color: #212529;
-}
-</style>
+<style lang="scss" scoped></style>

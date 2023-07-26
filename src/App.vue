@@ -33,5 +33,6 @@ export default {
     height: 84vh;
     overflow-y: auto;
     font-family: 'Courier Prime', monospace;
+    background-color: #212529;
 }
 </style>
