@@ -38,6 +38,4 @@ export const store = reactive({
     firstPage(url) {
         store.callAxios(url)
     }
-
-
 })
