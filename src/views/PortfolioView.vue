@@ -21,7 +21,11 @@ export default {
 <template>
     <div class="container p-5">
         <section v-if="store.projects">
-            <nav aria-label="Page navigation" class="d-flex justify-content-center pb-2">
+            <div class="row g-4">
+                <ProjectCard v-for="project in store.projects.data" :project="project" />
+            </div>
+            <!-- /ProjectCard -->
+            <nav aria-label="Page navigation" class="d-flex justify-content-center pt-5">
                 <ul class="pagination">
                     <li class="page-item" @click="store.firstPage(store.projects.first_page_url)"
                         v-if="store.projects.prev_page_url">
@@ -60,10 +64,6 @@ export default {
                 </ul>
             </nav>
             <!-- /page navigation -->
-            <div class="row g-4">
-                <ProjectCard v-for="project in store.projects.data" :project="project" />
-            </div>
-            <!-- /ProjectCard -->
         </section>
         <section v-else>
             <div class="no_records">
