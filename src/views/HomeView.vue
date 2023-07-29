@@ -1,6 +1,5 @@
 <script>
 import { store } from '../store.js'
-import { ref } from 'vue';
 
 export default {
     name: 'HomeView',
@@ -11,14 +10,6 @@ export default {
     },
     mounted() {
         store.callAxios(store.url);
-
-        let span_1 = ref(null);
-        let span_2 = ref(null);
-
-        span_1 = this.$refs.span_1;
-        span_2 = this.$refs.span_2;
-
-        span_1.classlist.add("start_animation")
     }
 }
 </script>
@@ -28,11 +19,11 @@ export default {
         <h1 class="pt-5 pop_out">Ciao!</h1>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <span class="i_am animation_hero justify-content-around" ref="span_1">Sono</span>
+                <div class="col-12 col-sm-6">
+                    <div class="i_am animation_hero justify-content-around">Sono</div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <span class="name animation_hero justify-content-around" ref="span_2">Yuri</span>
+                <div class="col-12 col-sm-6">
+                    <div class="name animation_hero justify-content-around">Yuri</div>
                 </div>
             </div>
         </div>
@@ -42,14 +33,19 @@ export default {
 
 
 <style lang="scss" scoped>
-span {
-    font-size: 240px;
+.animation_hero {
+    display: flex;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in;
+    font-size: 15vw;
 }
 
-//ANIMATIONS
 .pop_out {
-    animation-name: pop_out;
+    font-size: 5vw;
     animation-duration: 2s;
+    animation-name: pop_out;
 
 }
 
@@ -61,16 +57,6 @@ span {
     to {
         opacity: 100%;
     }
-}
-
-//ANIMATIONS
-
-.animation_hero {
-    display: flex;
-    animation-fill-mode: both;
-    animation-delay: 1s;
-    animation-duration: 0.75s;
-    animation-timing-function: ease-in;
 }
 
 .i_am {
@@ -144,31 +130,23 @@ span {
     }
 }
 
+.job_title {
+    font-size: 4vw;
+}
+
 
 //RESPONSIVE
-@media screen and (max-width: 1200px) {
-    span {
-        font-size: 200px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    span {
-        font-size: 160px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    span {
-        font-size: 180px;
+@media screen and (min-width: 1920px) {
+    .animation_hero {
+        font-size: 270px;
     }
 
-}
-
-@media screen and (max-width: 480px) {
-    span {
-        font-size: 120px;
+    .job_title {
+        font-size: 72px;
     }
 
+    .pop_out {
+        font-size: 72px;
+    }
 }
 </style>
