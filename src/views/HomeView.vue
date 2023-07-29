@@ -20,10 +20,10 @@ export default {
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6">
-                    <div class="i_am animation_hero justify-content-around">Sono</div>
+                    <div class="i_am animation_hero">Sono</div>
                 </div>
                 <div class="col-12 col-sm-6">
-                    <div class="name animation_hero justify-content-around">Yuri</div>
+                    <div class="name animation_hero">Yuri</div>
                 </div>
             </div>
         </div>
@@ -34,7 +34,6 @@ export default {
 
 <style lang="scss" scoped>
 .animation_hero {
-    display: flex;
     animation-fill-mode: both;
     animation-delay: 1s;
     animation-duration: 0.75s;
