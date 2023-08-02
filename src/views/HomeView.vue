@@ -44,6 +44,7 @@ export default {
 .pop_out {
     font-size: 5vw;
     animation-duration: 2s;
+    animation-timing-function: ease-in;
     animation-name: pop_out;
 
 }
@@ -131,6 +132,21 @@ export default {
 
 .job_title {
     font-size: 4vw;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-name: pop_out_delay;
+}
+
+@keyframes pop_out_delay {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
 }
 
 
