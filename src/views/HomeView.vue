@@ -15,24 +15,33 @@ export default {
 </script>
 
 <template>
-    <div class="text-light text-center">
-        <h1 class="pt-5 pop_out">Ciao!</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-6">
-                    <div class="i_am animation_hero">Sono</div>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <div class="name animation_hero">Yuri</div>
+    <div class="my_container text-light text-center">
+        <div class="">
+            <h1 class="pop_out">Ciao!</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <div class="i_am animation_hero">Sono</div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="name animation_hero">Yuri</div>
+                    </div>
                 </div>
             </div>
+            <h1 class="job_title">Full Stack Web Developer</h1>
         </div>
-        <h1 class="job_title">Full Stack Web Developer</h1>
     </div>
 </template>
 
 
 <style lang="scss" scoped>
+.my_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .animation_hero {
     animation-fill-mode: both;
     animation-delay: 1s;
