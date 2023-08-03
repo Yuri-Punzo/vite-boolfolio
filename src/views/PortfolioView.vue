@@ -67,7 +67,7 @@ export default {
         </section>
         <section v-else>
             <div class="no_records">
-                <h4>Sorry no records inside the database.</h4>
+                <h4 class="text-light">Sorry no records inside the database.</h4>
             </div>
         </section>
     </div>
