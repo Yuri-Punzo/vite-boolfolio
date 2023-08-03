@@ -4,8 +4,8 @@ export const store = reactive({
 
     projects: '',
     loading: true,
-    base_api_url: 'http://back.yuripunzo.com',
-    url: 'http://back.yuripunzo.com/api/projects',
+    base_api_url: 'https://back.yuripunzo.com',
+    url: 'https://back.yuripunzo.com/api/projects',
 
     callAxios(call) {
         axios.get(call)
